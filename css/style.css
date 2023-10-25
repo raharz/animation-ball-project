@@ -21,13 +21,16 @@
   height: 80px;
   background-image: linear-gradient(rgb(255, 113, 113), rgb(0, 255, 72));
   border-radius: 50px;
-  animation-name: rolling-jump;
+  animation: rolling-jump 1s ease-in-out infinite;
 }
 @keyframes rolling-jump{
-    from {
-        top: 0px:
-    }
-    to{
-        top: 100px;
-    }
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-100px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
